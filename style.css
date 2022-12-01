@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    /* background-color: black; */
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tilecontainer {
+    background-color: rgb(135, 157, 222);
+    width: 70vmin;
+    height: 70vmin;
+    padding: 0.6rem;
+    border: 20px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.6rem;
+    border-radius: 20px;
+}
+
+
+
+/* utilities */
+
+.t2 {
+    background-color: azure;
+    color: rgb(103, 71, 71);
+}
+
+.t4 {
+    background-color: antiquewhite;
+    color: rgb(103, 71, 71);
+}
+
+.t8 {
+    background-color: rgb(254, 131, 109);
+    color: white;
+}
+
+.t16 {
+    background-color: tomato;
+    color: white;
+}
+
+.t32 {
+    background-color: rgb(255, 94, 0);
+    color: white;
+}
+
+.t64 {
+    background-color: rgb(255, 60, 0);
+    color: white;
+}
+
+.t128 {
+    background-color: rgb(255, 240, 106);
+    color: rgb(103, 71, 71);
+}
+
+.t256 {
+    background-color: rgb(255, 237, 73);
+    color: rgb(103, 71, 71);
+}
+
+.t512 {
+    background-color: rgb(255, 229, 58);
+    color: rgb(103, 71, 71);
+}
+
+.t1024 {
+    background-color: rgb(255, 202, 58);
+    color: rgb(103, 71, 71);
+}
+
+.t2048 {
+    background-color: rgb(255, 195, 31);
+    color: rgb(103, 71, 71);
+}
+.t4096 {
+    background-color: black;
+    color: white;
+}
+
+.t8192 {
+    background-color: rgb(0, 255, 132);
+    color: rgb(176, 16, 16);
+}
+
+
+
+.tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: all 0.3s ;
+}
